@@ -39,6 +39,32 @@
 <!-- Follow the HTML instructions to create your stunning portfolio website -->
 
 <body>
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v7.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="101141714963394">
+  </div>
+
+
+
+
   <div id="top"></div>
 
   <!-- **** Hero Section **** -->
@@ -51,7 +77,7 @@
       </h1>
       <p class="hero-cta" class="load-hidden">
         <a target="_blank" class="cta-btn cta-btn--hero"
-          href="https://ocs.fas.harvard.edu/files/ocs/files/hes-resume-cover-letter-guide.pdf">Hire Me!</a>
+          href="https://ocs.fas.harvard.edu/files/ocs/files/hes-resume-cover-letter-guide.pdf">See my details...</a>
       </p>
     </div>
   </div>
